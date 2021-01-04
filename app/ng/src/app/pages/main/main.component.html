@@ -1,7 +1,21 @@
-<app-sidebar></app-sidebar>
+<div class="d-flex" id="wrapper">
 
-<div class="main row">
-  <div *ngFor="let doc of docs">
-    <app-preloader [name]="doc.name" [location]="doc.location"></app-preloader>
+  <!-- Sidebar -->
+  <app-sidebar></app-sidebar>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+
+    <app-top-bar></app-top-bar>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div *ngFor="let doc of docs">
+          <app-preloader [name]="doc.name" [location]="doc.location"></app-preloader>
+        </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
   </div>
-</div>
