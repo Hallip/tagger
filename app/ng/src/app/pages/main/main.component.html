@@ -1,0 +1,7 @@
+<app-sidebar></app-sidebar>
+
+<div class="main row">
+  <div *ngFor="let doc of docs">
+    <app-preloader [name]="doc.name" [location]="doc.location"></app-preloader>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+img {
+    width: 13vw;
+    height: 7.31vw;
+}
+label {
+    color: #808080;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+div {
+    width: 15vw;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
