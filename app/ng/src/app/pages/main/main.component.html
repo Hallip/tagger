@@ -11,8 +11,8 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div *ngFor="let doc of docs">
-          <app-preloader [name]="doc.name" [location]="doc.location"></app-preloader>
+        <div *ngFor="let doc of docs; index as i">
+          <app-preloader [elemenSelection]="elemenSelection" [position]=i [name]="doc.name" [location]="doc.location" (click)="changeSeleciont(i)"></app-preloader>
         </div>
       </div>
     </div>

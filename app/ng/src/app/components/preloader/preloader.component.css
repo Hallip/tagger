@@ -13,3 +13,7 @@ div {
     text-align: center;
     margin-bottom: 0.5em;
 }
+
+.selected {
+    background-color: #808080;
+}

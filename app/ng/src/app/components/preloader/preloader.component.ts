@@ -11,6 +11,8 @@ export class PreloaderComponent implements OnInit {
 
   @Input() public location: string;
   @Input() public name: string;
+  @Input() public position: number;
+  @Input() public elemenSelection: number;
 
   ngOnInit(): void {
   }

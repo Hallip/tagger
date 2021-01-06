@@ -1,12 +1,15 @@
 <div class="cont">
-  <ng-container *ngFor="let tag of tags">
+  <ng-container *ngFor="let tag of tags; index as i">
     <div class="tag" [style]='"background: "+ tag.color +";"'>
       <label>{{tag.name}}</label>
-      <fa-icon *ngIf="enable" [icon]="closeIco"></fa-icon>
+      <fa-icon *ngIf="enable" [icon]="closeIco" (click)="removeTags(i)"></fa-icon>
     </div>
   </ng-container>
   <div *ngIf="enable" style="display: inline-block;">
-    <input *ngIf="adding" type="text" (blur)="adding=false">
-    <fa-icon *ngIf="enable" [icon]="plusCircle" class="m-0 add" (click)="adding=true"></fa-icon>
+    <input  [ngClass]="{'clsoing': !adding, 'oppening': adding, 'beginning':beginning}" list="tagList" name="tagList" id="tagInput" type="text" (blur)="close()" (change)="addTag($event.target.value)">
+    <datalist id="tagList" >
+      <option *ngFor="let tag of notUsedTags" [value]="tag.name" >
+    </datalist>
+    <fa-icon *ngIf="enable" [icon]="plusCircle" class="m-0 add" (click)="addingButton()"></fa-icon>
   </div>
 </div>

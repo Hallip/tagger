@@ -9,28 +9,7 @@ import { Tag } from 'src/app/models/Tag';
 })
 export class SidebarComponent implements OnInit {
   public faSearch = faSearch;
-  public tags:Tag[] = [
-    {
-      name: 'Big Boo',
-      color: '#DF3F8C'
-    },
-    {
-      name: 'Big Boo ood gid',
-      color: '#3CB139'
-    },
-    {
-      name: 'Big Boo ood gid',
-      color: '#A86C2F'
-    },
-    { 
-      name: 'Big Bgid' ,
-      color: '#3C92D5'
-    },
-    { 
-      name: 'tag3',
-      color: '#FF8C00'
-    }
-  ];
+  
   constructor() {}
 
   ngOnInit(): void {}

@@ -1,52 +1,101 @@
 .tag {
-    background-color: darkorange;
-    border-radius: 1em;
-    display: inline-flex;
-    padding: 0;
-    padding-left: 0.5em;
-    padding-right: 0.2em;
-    margin-right: 0.2em;
-    margin-bottom: 0.2em;
-}
-.cont {
-    display: inline;
-}
-.add {
-    color: #106CC8;
-    font-size: 21px;   
-    
-}
-fa-icon:hover{
-    cursor: pointer;
-}
-label {
-    font-size: 14px;
-    font-weight: 400;
-    margin: 0;
-    vertical-align: middle;
-}
-fa-icon { 
-    margin-left: 0.5em;
-    vertical-align: middle;
-    font-size: 14px;
+  background-color: darkorange;
+  border-radius: 1em;
+  display: inline-flex;
+  padding: 0;
+  padding-left: 0.5em;
+  padding-right: 0.2em;
+  margin-right: 0.2em;
+  margin-bottom: 0.2em;
 }
 
-input[type="text"] {
+.cont {
+  display: inline;
+}
+
+.add {
+  color: #106CC8;
+  font-size: 21px;
+
+}
+
+fa-icon:hover {
+  cursor: pointer;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  vertical-align: middle;
+}
+
+fa-icon {
+  margin-left: 0.5em;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.beginning {
+  display: none;
+}
+
+.oppening {
+  color: #D4D4D4;
+  animation-name: appear;
+  animation-duration: 2s;
+  margin-left: 5px;
+  width: 4rem;
+  background-color: transparent;
+  border-width: 0px;
+  outline: none;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid #D4D4D4;
+  margin-right: 0.5em;
+
+}
+
+.clsoing {
     color: #D4D4D4;
-    animation-name: appear;
-    animation-duration: 2s;
-    margin-left: 5px;
-    width: 4rem;
+    animation-name: clsoing;
+    animation-duration: 1s;
+    margin-left: 0px;
+    width: 0rem;
     background-color: transparent;
     border-width: 0px;
     outline: none;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
     border-bottom: 1px solid #D4D4D4;
-    margin-right: 0.5em;
-
-}
-@keyframes appear {
-    0%   {width: 0px;}
-    100%  {width: 4rem;}
+    margin-right: 0em;
+    padding: 0;
   }
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+@keyframes appear {
+  0% {
+    width: 0px;
+    padding: 0;
+  }
+
+  100% {
+    width: 4rem;
+  }
+}
+
+@keyframes clsoing {
+  0% {
+    width: 4rem;
+    margin-right: 0.5em;
+  }
+
+  100% {
+    width: 0rem;
+    padding: 0;
+    margin-right: 0em;
+  }
+}

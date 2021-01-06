@@ -9,9 +9,13 @@ import { AppDocument } from 'src/app/models/AppDocument';
 export class MainComponent implements OnInit {
 
   public docs: AppDocument[] = [];
-
+  public elemenSelection: number = -1;
   constructor() { }
 
+  changeSeleciont(selected:number){
+    this.elemenSelection = selected
+  }
+  
   ngOnInit(): void {
     // Temportal
       var doc: AppDocument = {

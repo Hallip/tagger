@@ -1,4 +1,5 @@
-<div>
+<div [ngClass]="{'selected': elemenSelection===position}">
     <img [src]="location" alt="">
     <label>{{name}}</label>
 </div>
+
