@@ -8,6 +8,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PreloaderComponent } from './components/preloader/preloader.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TagsComponent } from './components/tags/tags.component';
 
 
 
@@ -17,7 +18,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MainComponent,
     SidebarComponent,
     PreloaderComponent,
-    TopBarComponent
+    TopBarComponent,
+    TagsComponent
   ],
   imports: [
     BrowserModule,
