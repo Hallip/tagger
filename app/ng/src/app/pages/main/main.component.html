@@ -8,14 +8,17 @@
   <div id="page-content-wrapper">
 
     <app-top-bar></app-top-bar>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div *ngFor="let doc of docs; index as i">
-          <app-preloader [elemenSelection]="elemenSelection" [position]=i [name]="doc.name" [location]="doc.location" (click)="changeSeleciont(i)"></app-preloader>
+    <div style="display: flex; height: 92vh;">
+      <div class="container-fluid">
+        <div class="row">
+          <div *ngFor="let doc of docs; index as i">
+            <app-preloader [elemenSelection]="elemenSelection" [position]=i [name]="doc.name" [location]="doc.location" (click)="changeSeleciont(i)"></app-preloader>
+          </div>
         </div>
       </div>
+      <!-- /#page-content-wrapper -->
+      <div *ngIf="elemenSelection != -1">
+        <app-doc-info [name]="docs[elemenSelection].name" [location]="docs[elemenSelection].location" [tags]="docs[elemenSelection].tags"></app-doc-info>
+      </div>
     </div>
-    <!-- /#page-content-wrapper -->
-
   </div>

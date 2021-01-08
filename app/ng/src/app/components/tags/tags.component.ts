@@ -12,7 +12,7 @@ import { Tag } from 'src/app/models/Tag';
   styleUrls: ['./tags.component.css'],
 })
 export class TagsComponent implements OnInit {
-  public tags: Tag[] = []
+  @Input() public tags: Tag[] = []
 
   public notUsedTags: Tag[] = [
     {
@@ -61,7 +61,7 @@ export class TagsComponent implements OnInit {
   ];
 
 
-  public enable: boolean = true;
+  @Input() public enable: boolean = true;
   public adding: boolean = false;
 
   public closeIco = faTimesCircle;

@@ -9,6 +9,7 @@ import { PreloaderComponent } from './components/preloader/preloader.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TagsComponent } from './components/tags/tags.component';
+import { DocInfoComponent } from './components/doc-info/doc-info.component';
 
 
 
@@ -19,7 +20,8 @@ import { TagsComponent } from './components/tags/tags.component';
     SidebarComponent,
     PreloaderComponent,
     TopBarComponent,
-    TagsComponent
+    TagsComponent,
+    DocInfoComponent
   ],
   imports: [
     BrowserModule,
