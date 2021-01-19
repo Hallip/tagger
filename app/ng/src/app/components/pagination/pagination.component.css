@@ -1,0 +1,9 @@
+label {
+    color: #eeeeee;
+}
+.element {
+    border: 1px solid #808080;
+    padding: 0.2em;
+    display: inline-block;
+    vertical-align: middle;
+}

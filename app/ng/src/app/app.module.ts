@@ -10,6 +10,7 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TagsComponent } from './components/tags/tags.component';
 import { DocInfoComponent } from './components/doc-info/doc-info.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 
 
@@ -21,7 +22,8 @@ import { DocInfoComponent } from './components/doc-info/doc-info.component';
     PreloaderComponent,
     TopBarComponent,
     TagsComponent,
-    DocInfoComponent
+    DocInfoComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,

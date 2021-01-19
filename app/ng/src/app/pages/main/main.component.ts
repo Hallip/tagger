@@ -51,6 +51,12 @@ export class MainComponent implements OnInit {
     this.docs.push(doc);
     this.docs.push(doc);
     this.docs.push(doc);
+    this.docs.push(doc);
+    this.docs.push(doc);
+    this.docs.push(doc);
+    this.docs.push(doc);
+    this.docs.push(doc);
+    this.docs.push(doc);
     // End Temporal
   }
   @HostListener('document:keydown', ['$event'])

@@ -10,10 +10,13 @@
     <app-top-bar></app-top-bar>
     <div style="display: flex; height: 92vh;">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row preloaders">
           <div *ngFor="let doc of docs; index as i">
             <app-preloader [elemenSelection]="elemenSelection" [position]=i [name]="doc.name" [location]="doc.location" (click)="changeSeleciont(i)"></app-preloader>
           </div>
+        </div>
+        <div>
+          <app-pagination></app-pagination>
         </div>
       </div>
       <!-- /#page-content-wrapper -->

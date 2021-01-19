@@ -9,3 +9,28 @@
 .container-fluid {
   margin-top: 1em;
 }
+
+.preloaders {
+  overflow-y: scroll;
+  height: 79vh;
+  margin-right: 0.2em;
+}
+
+.preloaders::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.preloaders::-webkit-scrollbar-track {
+  background: #333333; 
+}
+ 
+/* Handle */
+.preloaders::-webkit-scrollbar-thumb {
+  background: #616161; 
+}
+
+/* Handle on hover */
+.preloaders::-webkit-scrollbar-thumb:hover {
+  background: #4f4f4f; 
+}
