@@ -5,5 +5,11 @@
         <img [src]="location" alt="">
         <br>
         <app-tags [enable] = false [tags]=tags></app-tags>
+        <div>
+            <label class="text1">Search image in:</label>
+            <h1></h1>
+            <br>
+            <app-tags [enable] = false [tags]=searchSites [linkeable]=true></app-tags>
+        </div>
     </div>
 </div>

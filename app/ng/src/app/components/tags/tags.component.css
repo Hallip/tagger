@@ -16,6 +16,10 @@
   display: inline;
 }
 
+.linkeable {
+  cursor: pointer;
+}
+
 .add {
   color: #106CC8;
   font-size: 21px;

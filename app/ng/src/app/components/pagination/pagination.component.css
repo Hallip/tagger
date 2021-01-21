@@ -1,9 +1,36 @@
 label {
     color: #eeeeee;
+    margin-bottom: 0px;
+    font-size: 18px;
+    cursor: pointer;
 }
+
 .element {
-    border: 1px solid #808080;
-    padding: 0.2em;
+    background-color: #454545;
+    border-radius: 8px;
+    margin-left: 1em;
+    width: 2.5em;
+    height: 2.5em;
+    border: 1px solid #454545;
     display: inline-block;
     vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.element:hover{
+    background-color: #616161;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #616161;
+    cursor: default !important;
+}
+
+.row {
+    margin-top: 1.2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }

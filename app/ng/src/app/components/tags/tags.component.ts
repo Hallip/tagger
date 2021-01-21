@@ -62,6 +62,7 @@ export class TagsComponent implements OnInit {
 
 
   @Input() public enable: boolean = true;
+  @Input() public linkeable: boolean = false;
   public adding: boolean = false;
 
   public closeIco = faTimesCircle;

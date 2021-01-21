@@ -1,8 +1,13 @@
 <div class="row">
-    <div class="element">
-        <label><<</label>
+    <div class="element" style="margin-left: 0px;">
+        <label><</label>
     </div>
+    <ng-container *ngFor="let item of pages; index as i">
+        <div class="element" [ngClass]="{'selected': i == pageNum}" >
+            <label [ngClass]="{'selected': i == pageNum}">{{i+1}}</label>
+        </div>
+    </ng-container>
     <div class="element">
-        <label>>></label>
+        <label>></label>
     </div>
 </div>
